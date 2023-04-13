@@ -81,9 +81,10 @@ def predict() -> dict:
         return jsonify({'error': 'Wrong model name'}), 400
 
     # Return the prediction
-    if data['decode'] == True:
+    decode = data.get('decode', False)  # Get the value of 'decode' or set it to False if not provided
+    if decode == True:
         return jsonify({"prediction": str(decoder(prediction))}) , 200
     return jsonify({'prediction': int(prediction)}) , 200
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
