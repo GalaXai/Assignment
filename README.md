@@ -1,4 +1,4 @@
-# OpenX Internship Assignment
+#Assignment
 
 ### Assignment summary
 1. Load the Covertype Data Set
@@ -18,7 +18,7 @@
   - Do not host it anywhere, the code is enough
 
 
-  ### Usage
+### Usage
 
 ```bash
 python app.py 
